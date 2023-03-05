@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Request a new certificate
-certbot renew --pre-hook "systemctl stop apache2" --post-hook "systemctl start apache2" --renew-hook "systemctl reload apache2" --quiet
+#certbot renew --pre-hook "systemctl stop apache2" --post-hook "systemctl start apache2" --renew-hook "systemctl reload apache2" --quiet
 
 # Ensure to load the new certificates to mailcow
 cd /srv/mail/mailcow-dockerized
